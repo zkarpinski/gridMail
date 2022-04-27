@@ -3,12 +3,12 @@ gridMail
 __Command line based emailing program that used Microsoft Exchange Services__
 
 
-##Requirements
+## Requirements
 
 * .NET Framework v4.0+
 * Exchange Account
 
-##Build Requirements
+## Build Requirements
 * Visual Studio 2015
 * [.Net Framework v4.0](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
 * [Exchange Web Services (EWS) API](https://www.microsoft.com/en-us/download/details.aspx?id=42022)
