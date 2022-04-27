@@ -11,7 +11,8 @@ __Command line based emailing program that used Microsoft Exchange Services__
 ## Build Requirements
 * Visual Studio 2015
 * [.Net Framework v4.0](http://www.microsoft.com/en-us/download/details.aspx?id=17851)
-* [Exchange Web Services (EWS) API](https://www.microsoft.com/en-us/download/details.aspx?id=42022)
+* [Exchange Web Services (EWS) API](https://www.microsoft.com/en-us/download/details.aspx?id=42022) (EOL)
+	* Use nuget Install-Package Microsoft.Exchange.WebServices -Version 2.2.0
 
 
 ## Usage

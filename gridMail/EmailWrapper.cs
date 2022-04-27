@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Configuration;
 using Microsoft.Exchange.WebServices.Data;
 
 
@@ -21,7 +22,7 @@ namespace gridMail {
         private List<string> recipients;
         private List<string> distribution_groups;
         private ExchangeService exchange_service;
-        private const string exchange_uri = "https://url.com/ews/exchange.asmx";
+        private string exchange_uri = ConfigurationManager.AppSettings.Get("exchange_uri");
 
 
 
@@ -137,6 +138,11 @@ namespace gridMail {
 
         public void AddGroup(string grp) {
             this.distribution_groups.Add(grp);
+        }
+
+        public void GetExchangeURI()
+        {
+            Console.WriteLine("The exchange uri is: {0} the file does not exist.\nPress Enter to exit...", this.exchange_uri);
         }
 
         public void UseHTML(string file) {
